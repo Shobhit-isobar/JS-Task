@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu-wrapper">
+      <div class="navigation">
+        <ul>
+          <a href="index.html" class="active" target="_blank">Home</a>
+          <a href="about.html" target="_blank">About</a>
+        </ul>
+      </div>
+      <div class="theme-switch">
+        <div class="switch"></div>
+      </div>
+     
+    </div>
+    <div class="container">
+      <div class="textaria-wrapp">
+        <h2>Enter the text to analyze</h2>
+        <small>exmaple textarea</small>
+        <textarea name="" id="mytextarea" onkeyup="charcountupdate(this.value)" cols="70" rows="10"></textarea>
+      </div>
+   
+      <div class="button-wrapper">
+        <button id="upper" class="convert-btn" onclick="upper()">Convert To UpperCase</button>
+        <button id="lower" class="convert-btn">Convert To LowerCase</button>
+      </div>
+      <div class="summary-section">
+        <h3>Summary</h3>
+       <div class="summary-text">Words <span id ="wordCount"></span>,
+        Characters <span id="charCount"></span>,
+        Excluding all spaces <span id="noSpace"></span>
+      </div> 
+       
+      </div>
+      <div class="preview-section">
+        <h3>Preview</h3>
+        <div class="preview-text" id="preview"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  </body>
+</html>

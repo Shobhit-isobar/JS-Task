@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+:root {
+  --background: #000;
+  --text: #fff;
+  --highlight: #a2270b;
+}
+
+body {
+  background: var(--background);
+  transition: 0.5s background ease;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2f2e2e;
+  padding: 0 40px;
+}
+
+.theme-switch {
+  --background: #fff;
+  --text: #000;
+  color: var(--text);
+  width: 70px;
+  height: 30px;
+  background: var(--highlight);
+  border-radius: 50px;
+  position: relative;
+}
+.theme-switch .switch {
+  background: white;
+  width: 24px;
+  height: 24px;
+  background: var(--background);
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.5s all ease;
+}
+
+.light-theme {
+  --background: #fff;
+  --text: #000;
+  background: var(--background);
+}
+.light-theme .theme-switch {
+  background: var(--text);
+}
+.light-theme .theme-switch .switch {
+  transform: translateX(37px);
+}
+.light-theme a {
+  color: var(--text);
+}
+.light-theme .menu-wrapper {
+  background: #d2d2d2;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+}
+ul a {
+  margin: 10px 30px;
+  position: relative;
+  color: var(--text);
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+h2 ,small, h3, span, .summary-section, .preview-section {
+color: var(--text);
+}
+.convert-btn {
+  background-color: #a2270b;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.textaria-wrapp {
+  margin-bottom: 20px;
+}
+.textaria-wrapp textarea {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.textaria-wrapp small {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
